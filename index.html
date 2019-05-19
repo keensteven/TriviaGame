@@ -21,50 +21,61 @@
       <p class="lead">Select the corret answer and check your score. You have one minute to complete the game.</p>
     </div>
   </div>
-  <div class="container text-center p-5">
+  <div class="container text-center pt-1 pr-5 pb-5 pl-5">
 
-  <button type="button" class="btn btn-primary btn-lg mb-5" id="startbutton">Start the Game</button>
-  
+    <div id="buttonvisible" class="visible">
+    <button type="button" class="btn btn-primary btn-lg" id="startbutton">Start the Game</button>
+    </div>
 
-  <div class="invisible">
+    <div id="scorevisible" class="invisible">
+      <div class="row">
+        <div class="col-md-4 alert alert-secondary" role="alert">Correct: <span id="wins-score"></span></div>
+        <div class="col-md-4 alert alert-secondary" role="alert">Incorrect: <span id="losses-score"></span></div>
+        <div class="col-md-4 alert alert-secondary" role="alert">Unanswered: <span id="unanswered-score"></span></div>
+      </div>
+    </div>
+
+    <div class="invisible">
       <div id="visibility">
 
+        <p>In which 1984 science fiction movie did Linda Hamilton play the character Sarah Connor?</p>
+        <input type="radio" value="1" name="question1" id="q1" class="answer"> The Terminator<br>
+        <input type="radio" value="2" name="question1" id="q2" class="answer"> Aliens<br>
+        <input type="radio" value="2" name="question1" id="q3" class="answer"> Blade Runner<br>
+        <hr>
 
-  <p>In which 1984 science fiction movie did Linda Hamilton play the character Sarah Connor?</p>
-  <input type="radio" value="true" name="question1" id="q1"> The Terminator<br>
-  <input type="radio" value="false" name="question1" id="q2"> Aliens<br>
-  <input type="radio" value="male" name="question1" id="q3"> Blade Runner<br>
-  <hr>
-  
-  <p>Who played Jack Dawson in the 1997 film Titanic?</p>
-  
-  <input type="radio" value="false" name="question2" class="radios"> Tom Hanks<br>
-  <input type="radio" value="false" name="question2" class="radios"> Johnny Depp<br>
-  <input type="radio" value="true" name="question2" class="radios"> Leonardo DiCaprio<br>
-  <hr>
-  
-  <p>What is the name of the third Indiana Jones movie?</p>
-  
-  <input type="radio" value="false" name="question3" class="radios"> Indiana Jones and the Temple of Doom<br>
-  <input type="radio" value="true" name="question3" class="radios"> Indiana Jones and the Last Crusdade<br>
-  <input type="radio" value="false" name="question3" class="radios"> Raiders of the Lost Ark<br>
-  <hr>
-  
-  <p>Which actor played Frodo Baggins in the Lord of the Rings trilogy?</p>
-  
-  <input type="radio" value="false" name="question4" class="radios"> Sean Astin<br>
-  <input type="radio" value="true" name="question4" class="radios"> Elijah Wood<br>
-  <input type="radio" value="false" name="question4" class="radios"> Sean Bean<br>
-  <hr>
-  
-  <p>Who was the first actor to play James Bond?</p>
-  
-  <input type="radio" value="true" name="question5" class="radios"> Sean Connery<br>
-  <input type="radio" value="false" name="question5" class="radios"> Timothy Dalton<br>
-  <input type="radio" value="false" name="question5" class="radios"> Roger Moore<br>
-  <hr>
-</div>
-</div>
+        <p>Who played Jack Dawson in the 1997 film Titanic?</p>
+
+        <input type="radio" value="false" name="question2" class="radios"> Tom Hanks<br>
+        <input type="radio" value="false" name="question2" class="radios"> Johnny Depp<br>
+        <input type="radio" value="true" name="question2" class="radios"> Leonardo DiCaprio<br>
+        <hr>
+
+        <p>What is the name of the third Indiana Jones movie?</p>
+
+        <input type="radio" value="false" name="question3" class="radios"> Indiana Jones and the Temple of Doom<br>
+        <input type="radio" value="true" name="question3" class="radios"> Indiana Jones and the Last Crusdade<br>
+        <input type="radio" value="false" name="question3" class="radios"> Raiders of the Lost Ark<br>
+        <hr>
+
+        <p>Which actor played Frodo Baggins in the Lord of the Rings trilogy?</p>
+
+        <input type="radio" value="false" name="question4" class="radios"> Sean Astin<br>
+        <input type="radio" value="true" name="question4" class="radios"> Elijah Wood<br>
+        <input type="radio" value="false" name="question4" class="radios"> Sean Bean<br>
+        <hr>
+
+        <p>Who was the first actor to play James Bond?</p>
+
+        <input type="radio" value="true" name="question5" class="radios"> Sean Connery<br>
+        <input type="radio" value="false" name="question5" class="radios"> Timothy Dalton<br>
+        <input type="radio" value="false" name="question5" class="radios"> Roger Moore<br>
+        <hr>
+      </div>
+    </div>
+
+
+
   </div>
 
 
@@ -77,4 +88,5 @@
 
   </script>
 </body>
+
 </html>
