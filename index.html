@@ -18,7 +18,7 @@
   <div class="jumbotron jumbotron-fluid text-center">
     <div class="container">
       <h1 class="display-4">Movie Trivia</h1>
-      <p class="lead">Select the corret answer and check your score. You have one minute to complete the game.</p>
+      <p class="lead">Select the correct answer and check your score. You have one minute to complete the game.</p>
     </div>
   </div>
   <div class="container text-center pt-1 pr-5 pb-5 pl-5">
@@ -29,8 +29,8 @@
 
     <div id="scorevisible" class="invisible">
       <div class="row">
-        <div class="col-md-4 alert alert-secondary" role="alert">Correct: <span id="wins-score"></span></div>
-        <div class="col-md-4 alert alert-secondary" role="alert">Incorrect: <span id="losses-score"></span></div>
+        <div class="col-md-4 alert alert-secondary" role="alert">Correct: <span id="correct-score"></span></div>
+        <div class="col-md-4 alert alert-secondary" role="alert">Incorrect: <span id="incorrect-score"></span></div>
         <div class="col-md-4 alert alert-secondary" role="alert">Unanswered: <span id="unanswered-score"></span></div>
       </div>
     </div>
@@ -46,47 +46,39 @@
 
         <p>Who played Jack Dawson in the 1997 film Titanic?</p>
 
-        <input type="radio" value="false" name="question2" class="radios"> Tom Hanks<br>
-        <input type="radio" value="false" name="question2" class="radios"> Johnny Depp<br>
-        <input type="radio" value="true" name="question2" class="radios"> Leonardo DiCaprio<br>
+        <input type="radio" value="2" name="question2" id="q4" class="radios"> Tom Hanks<br>
+        <input type="radio" value="2" name="question2" id="q5" class="radios"> Johnny Depp<br>
+        <input type="radio" value="1" name="question2" id="q6" class="radios"> Leonardo DiCaprio<br>
         <hr>
 
         <p>What is the name of the third Indiana Jones movie?</p>
 
-        <input type="radio" value="false" name="question3" class="radios"> Indiana Jones and the Temple of Doom<br>
-        <input type="radio" value="true" name="question3" class="radios"> Indiana Jones and the Last Crusdade<br>
-        <input type="radio" value="false" name="question3" class="radios"> Raiders of the Lost Ark<br>
+        <input type="radio" value="2" name="question3" id="q7" class="radios"> Indiana Jones and the Temple of Doom<br>
+        <input type="radio" value="1" name="question3" id="q8" class="radios"> Indiana Jones and the Last Crusdade<br>
+        <input type="radio" value="2" name="question3" id="q9" class="radios"> Raiders of the Lost Ark<br>
         <hr>
 
         <p>Which actor played Frodo Baggins in the Lord of the Rings trilogy?</p>
 
-        <input type="radio" value="false" name="question4" class="radios"> Sean Astin<br>
-        <input type="radio" value="true" name="question4" class="radios"> Elijah Wood<br>
-        <input type="radio" value="false" name="question4" class="radios"> Sean Bean<br>
+        <input type="radio" value="2" name="question4" id="q10" class="radios"> Sean Astin<br>
+        <input type="radio" value="1" name="question4" id="q11" class="radios"> Elijah Wood<br>
+        <input type="radio" value="2" name="question4" id="q12" class="radios"> Sean Bean<br>
         <hr>
 
         <p>Who was the first actor to play James Bond?</p>
 
-        <input type="radio" value="true" name="question5" class="radios"> Sean Connery<br>
-        <input type="radio" value="false" name="question5" class="radios"> Timothy Dalton<br>
-        <input type="radio" value="false" name="question5" class="radios"> Roger Moore<br>
+        <input type="radio" value="1" name="question5" id="q13" class="radios"> Sean Connery<br>
+        <input type="radio" value="2" name="question5" id="q14" class="radios"> Timothy Dalton<br>
+        <input type="radio" value="2" name="question5" id="q15" class="radios"> Roger Moore<br>
         <hr>
       </div>
     </div>
 
-
-
   </div>
 
-
-
-
   <script src="assets/javascript/app.js">
-
-
-
-
   </script>
+
 </body>
 
 </html>
