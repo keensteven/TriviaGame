@@ -133,9 +133,9 @@ $(document).ready(function () {
 
 
 
-    setTimeout(fortySeconds, 1000 * 40);
+    setTimeout(sixtySeconds, 1000 * 60);
 
-    function fortySeconds() {
+    function sixtySeconds() {
       // in the element with an id of time-left add an h2 saying Time's Up!
       // console log done
       var targetDiv = document.getElementById("visibility");
